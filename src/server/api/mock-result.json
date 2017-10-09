@@ -1,0 +1,51 @@
+{
+  "regions": {
+    
+    "header": {
+      "title": "My Shopping Cart",
+      "menu": {
+        "home": "/",
+        "saved": "/saved",
+        "fashion": "/fashion",
+        "auto": "/auto",
+        "music": "/music",
+        "toys": "/toys"
+      }
+    },
+    
+    "leftpanel": [
+      "Style",
+      "Material",
+      "Color",
+      "Brand",
+      "Size"
+    ],
+    
+    "center": {
+      "item": [
+        {
+          "id": 1,
+          "name": "item_1",
+          "description": "lorep ipsum desc_1"
+        }, {
+          "id": 2,
+          "name": "item_2",
+          "description": "lorep ipsum desc_2"
+        }, {
+          "id": 3,
+          "name": "item_3",
+          "description": "lorep ipsum desc_3"
+        }
+      ]
+    },
+    
+    "footer": [
+      "About Us",
+      "Contact Us",
+      "Announcements",
+      "Community",
+      "Site Map"
+    ]
+    
+  }
+}
