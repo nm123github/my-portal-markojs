@@ -1,3 +1,6 @@
+#Markojs
+*.marko.js
+
 # Logs
 logs
 *.log
