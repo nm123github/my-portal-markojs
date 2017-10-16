@@ -1,5 +1,6 @@
 #Markojs
 *.marko.js
+build
 
 # Logs
 logs
