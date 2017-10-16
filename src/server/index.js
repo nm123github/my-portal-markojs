@@ -11,7 +11,8 @@ function createApp() {
 
 	const app = express();
 	app.use(mockApiMiddleware);
-	app.use(express.static('public'))
+	// app.use(express.static('public'))
+	app.use(express.static('build/static'))
 	// app.get('/', function (req, res) {
 	//   res.send('Hello World!')
 	// })
