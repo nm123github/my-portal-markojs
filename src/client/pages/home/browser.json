@@ -2,6 +2,7 @@
   "dependencies": [
     "require: marko-widgets",
     "require: ../../components/my-button",
+    "require-run: ./client",
     "./"
   ]
 }
