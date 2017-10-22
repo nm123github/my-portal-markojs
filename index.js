@@ -1,6 +1,6 @@
 'use strict';
 
-const app = require('./src/server')()
+const app = require('./src/app')()
 const lasso = require('lasso').configure("lasso.json");	// build source!
 
 app.listen(3000, function () {

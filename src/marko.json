@@ -1,9 +1,9 @@
 {
-    "tags-dir":"./components",
+    "tags-dir":"./components/fe",
     
     "tags": {
         "my-hello": {
-            "renderer": "./components/my-hello",
+            "renderer": "./components/fe/my-hello",
             "attributes": {
                 "name": "string"
             }

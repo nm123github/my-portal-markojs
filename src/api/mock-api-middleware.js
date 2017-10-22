@@ -38,7 +38,7 @@ module.exports = mockApiMiddleware({
       {
           path: '/api/layout',
           template: function() {
-              var layout = fs.readFileSync('./server/api/mock-result.json');
+              var layout = fs.readFileSync(__dirname + '/mock-result.json');
               return JSON.parse(layout);
           }        
       }
