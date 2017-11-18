@@ -1,7 +1,7 @@
 
 <!-- "name" used as name for the dynamically created javascript file. -->
 <!-- "package-path" defines a package file which includes the resources, components to be included in the html -->
-<lasso-page name="my-page" package-path="./browser.json"/>
+<lasso-page name="my-page" flags=data.lassoFlags package-path="./browser.json"/>
 <html>
 <head>
 	<title>Hello - welcome to markojs</title>
@@ -9,14 +9,37 @@
 	<lasso-head/>
 </head>
 <body>
-	<my-hello name="${data.name}" />
-	<my-button buttonName="Click Me"/>
-	<div id="my-client-button"></div>
+
+	<div class="grid">
+	    <div class="grid__group">
+	        <div class="grid__cell grid__cell--8of8-sm grid__cell--16of16">
+	            <div class="header">Header</div>
+	        </div>
+	    </div>
+	    <div class="grid__group grid__group--wrap">
+	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--4of16">
+    			<div class="leftnav">Left Nav</div>
+    		</div>
+	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--12of16">
+    			<div class="center">
+    				<my-hello name="${data.name}" />
+					<my-button buttonName="Click Me"/>
+					<div id="my-client-button"></div>
+    			</div>
+    		</div>
+	    </div>
+	    <div class="grid__group">
+	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--16of16">
+	    		<div class="footer">Footer</div>
+	    	</div>
+	    </div>
+	</div>
 
 	<!-- widgets initializer javascript call -->
 	<init-widgets/>
 
 	<!-- javascript files -->
 	<lasso-body/>
+
 </body>
 </html>

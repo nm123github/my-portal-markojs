@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ebay/skin": "^3.1.0",
     "casual": "^1.5.17",
     "connect-mock-api": "^1.2.0",
-    "express": "^4.16.1",
+    "express": "^4.16.2",
+    "express-device": "^0.4.2",
     "kraken-js": "^2.1.0",
     "lasso": "^2.11.16",
     "lasso-marko": "^2.3.0",

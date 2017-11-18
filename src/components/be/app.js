@@ -1,7 +1,8 @@
 'use strict';
 
 const express = require('express')
-const mockApiMiddleware = require("./api/mock-api-middleware");
+const mockApiMiddleware = require("../../api/mock-api-middleware");
+var device = require('express-device');
 
 function createApp() {
 	
@@ -10,12 +11,13 @@ function createApp() {
 
 	const app = express();
 	app.use(mockApiMiddleware);
+	app.use(device.capture());
 	// app.use(express.static('public'))
 	app.use(express.static('build/static'))
 	// app.get('/', function (req, res) {
 	//   res.send('Hello World!')
 	// })
-	app.get('/', require('./pages/home/'));
+	app.get('/', require('../../pages/home/'));
 	return app;
 }
 

@@ -12,19 +12,22 @@ var templates = {
 
 module.exports = function(req, res) {
 
-	// check if desktop or mobile!
-	var template = templates.desktop;
+	// render desktop or mobile!
+    var template = templates.mobile
+    if ( req.device.type === 'desktop' ) {
+    	template = templates.desktop;
+    }
 
 	fetch('http://localhost:3000/api/layout').then(function(res) {
         return res.json();
 
     }).then(function(json) {
-    	console.log();
-
+    	console.log(json);
+        
         res.setHeader('Content-Type', 'text/html; charset=utf-8');    
 		template.render({
 			name: "Neville",
-			json: json
+            lassoFlags: [ req.device.type ]
 		}, res);
 
     }).catch(function(err) {

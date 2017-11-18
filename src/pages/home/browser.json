@@ -1,8 +1,15 @@
 {
   "dependencies": [
+    "./",
+    "@ebay/skin",
     "require: marko-widgets",
     "require: ../../components/fe/my-button",
-    "require-run: ./client",
-    "./"
+    {
+        "if-flag": "desktop",
+        "dependencies": [
+            "./style.css",
+            "require-run: ./client"
+        ]
+    }
   ]
 }

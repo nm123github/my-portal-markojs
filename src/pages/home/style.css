@@ -1,0 +1,16 @@
+
+.header {
+	border: 2px solid red;
+}
+
+.leftnav {
+	border: 2px solid green;
+}
+
+.center {
+	border: 2px solid blue;
+}
+
+.footer {
+	border: 2px solid yellow;
+}
