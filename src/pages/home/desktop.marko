@@ -9,7 +9,7 @@
 	<lasso-head/>
 </head>
 <body>
-
+	
 	<div class="grid">
 	    <div class="grid__group">
 	        <div class="grid__cell grid__cell--8of8-sm grid__cell--16of16">
@@ -23,8 +23,11 @@
 	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--12of16">
     			<div class="center">
     				<my-hello name="${data.name}" />
-					<my-button buttonName="Click Me"/>
 					<div id="my-client-button"></div>
+
+					<!-- render on client -->
+					<div id="my-name-validator"></div>
+					<!-- <my-name-validator buttonName="Desktop Button" placeholder="Enter Name" /> -->
     			</div>
     		</div>
 	    </div>

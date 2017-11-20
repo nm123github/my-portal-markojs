@@ -14,11 +14,13 @@
     "connect-mock-api": "^1.2.0",
     "express": "^4.16.2",
     "express-device": "^0.4.2",
+    "jquery": "^3.2.1",
     "kraken-js": "^2.1.0",
     "lasso": "^2.11.16",
     "lasso-marko": "^2.3.0",
     "marko": "^3.14.3",
     "marko-widgets": "^6.6.0",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^1.7.3",
+    "picomodal": "^3.0.0"
   }
 }

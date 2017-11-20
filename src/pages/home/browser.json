@@ -11,5 +11,12 @@
             "require-run: ./client"
         ]
     }
-  ]
+  ],
+  "async": {
+    "my-module/validator": [
+        "require: jquery",
+        "require: picomodal",
+        "require: ../../components/fe/my-name-validator"
+    ]
+  }
 }
