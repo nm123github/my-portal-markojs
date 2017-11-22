@@ -4,6 +4,7 @@
     "@ebay/skin",
     "require: marko-widgets",
     "require: ../../components/fe/my-button",
+    "require: ../../components/fe/my-counter",
     {
         "if-flag": "desktop",
         "dependencies": [
