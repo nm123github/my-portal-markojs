@@ -17,9 +17,10 @@
     "jquery": "^3.2.1",
     "kraken-js": "^2.1.0",
     "lasso": "^2.11.16",
+    "lasso-loader": "^3.0.2",
     "lasso-marko": "^2.3.0",
-    "marko": "^3.14.3",
-    "marko-widgets": "^6.6.0",
+    "marko": "^4",
+    "marko-widgets": "^7",
     "node-fetch": "^1.7.3",
     "picomodal": "^3.0.0"
   }
