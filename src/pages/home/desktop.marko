@@ -23,13 +23,21 @@
 	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--12of16">
     			<div class="center">
     				<my-hello name="${data.name}" />
-					<div id="my-client-button"></div>
 
 					<!-- render on client -->
 					<div id="my-name-validator"></div>
 					<!-- <my-name-validator buttonName="Desktop Button" placeholder="Enter Name" /> -->
-					
+
+					<div id="my-client-button"></div>
 					<my-counter value=5 />
+					
+					<p><b>Table with rows</b></p>
+					<div>
+						<for(row in data.rows)>
+							<my-row row=row />
+						</for>
+					</div>
+					
     			</div>
     		</div>
 	    </div>

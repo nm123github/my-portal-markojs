@@ -9,7 +9,22 @@ const fs = require('fs');
 module.exports = mockApiMiddleware({
   baseUrl: '', //optional
   endpoints: [
-      {
+    {
+        path: '/api/rows/',
+        template: function(params) {
+            var arr = [];
+            for (var i = 0; i < 5; i++) {
+              arr.push({
+                id: i,
+                name: casual.full_name,
+                city: casual.city,
+                phone: casual.phone.substring(0, casual.phone.length - 4) + "****"
+              })
+            }
+            return arr;
+        }
+    },
+    {
           path: '/api/images/',
           template: function() {
               var arr = [];

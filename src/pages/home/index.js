@@ -18,7 +18,7 @@ module.exports = function(req, res) {
     	template = templates.desktop;
     }
 
-	fetch('http://localhost:3000/api/layout').then(function(res) {
+	fetch('http://localhost:3000/api/rows').then(function(res) {
         return res.json();
 
     }).then(function(json) {
@@ -26,7 +26,8 @@ module.exports = function(req, res) {
         
         res.setHeader('Content-Type', 'text/html; charset=utf-8');    
 		template.render({
-			name: "Neville",
+            name: "Neville",
+            rows: json,
             lassoFlags: [ req.device.type ]
 		}, res);
 
