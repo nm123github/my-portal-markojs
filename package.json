@@ -21,7 +21,7 @@
     "lasso-loader": "^3.0.2",
     "lasso-marko": "^2.3.0",
     "marko": "^4",
-    "marko-widgets": "^6.6.6",
+    "marko-widgets": "^7",
     "node-fetch": "^2.1.1",
     "picomodal": "^3.0.0"
   }
