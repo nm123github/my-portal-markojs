@@ -1,0 +1,8 @@
+{
+    "title": "Hey, this changed!",
+    "head": "<style>body { background-color: lightblue; }</style> <link rel=\"stylesheet\" href=\"/my-page-desktop/@ebay/skin$3.4.0/dist/global/ds4/global.css\" class=\"css-httplocalhost3000mypagedesktopebayskin340distglobalds4globalcss\">",
+    "body": {
+      "content": "NEW CONTENT"
+    },
+    "foot": "<script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.js\"></script><script>alert('hi')</script>"
+}

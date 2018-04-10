@@ -9,47 +9,52 @@
 	<lasso-head/>
 </head>
 <body>
-	
-	<div class="grid">
-	    <div class="grid__group">
-	        <div class="grid__cell grid__cell--8of8-sm grid__cell--16of16">
-	            <div class="header">Header</div>
-	        </div>
-	    </div>
-	    <div class="grid__group grid__group--wrap">
-	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--4of16">
-    			<div class="leftnav">Left Nav</div>
-    		</div>
-	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--12of16">
-    			<div class="center">
-    				<my-hello name="${data.name}" />
+	<div id="content">
+		<div class="grid">
+			<div class="grid__group">
+				<div class="grid__cell grid__cell--8of8-sm grid__cell--16of16">
+					<div class="header">Header</div>
+				</div>
+			</div>
+			<div class="grid__group grid__group--wrap">
+				<div class="grid__cell grid__cell--8of8-sm grid__cell--4of16">
+					<div class="leftnav">Left Nav</div>
+				</div>
+				<div class="grid__cell grid__cell--8of8-sm grid__cell--12of16">
+					<div class="center">
+						<my-hello name="${data.name}" />
 
-					<!-- render on client -->
-					<div id="my-name-validator"></div>
-					<!-- <my-name-validator buttonName="Desktop Button" placeholder="Enter Name" /> -->
+						<!-- render on client -->
+						<div id="my-name-validator"></div>
+						<!-- <my-name-validator buttonName="Desktop Button" placeholder="Enter Name" /> -->
 
-					<div id="my-client-button"></div>
-					<my-counter value=5 />
-					
-					<p><b>Table with rows</b></p>
-					<div>
-						<for(row in data.rows)>
-							<my-row row=row />
-						</for>
+						<div id="my-client-button"></div>
+						<my-counter value=5 />
+						
+						<p><b>Table with rows</b></p>
+						<div>
+							<for(row in data.rows)>
+								<my-row row=row />
+							</for>
+						</div>
+
+						<p><a href="/">Next Page (With Reload)</a> | <a href="/" class="spf-link">Next Page (SPF)</a></p>
+						
 					</div>
-					
-    			</div>
-    		</div>
-	    </div>
-	    <div class="grid__group">
-	    	<div class="grid__cell grid__cell--8of8-sm grid__cell--16of16">
-	    		<div class="footer">Footer</div>
-	    	</div>
-	    </div>
+				</div>
+			</div>
+			<div class="grid__group">
+				<div class="grid__cell grid__cell--8of8-sm grid__cell--16of16">
+					<!-- <div class="footer">Footer</div> -->
+					<div class="footer">Footer</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
+	
 	<!-- javascript files -->
-	<lasso-body/>
-
+	<div id="footer">
+		<lasso-body/>
+	</div>
 </body>
 </html>

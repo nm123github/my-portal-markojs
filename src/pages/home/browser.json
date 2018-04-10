@@ -4,6 +4,7 @@
     "@ebay/skin",
     "require: marko-widgets",
     "require: jquery",
+    "require-run: spf/dist/spf.js",
     "require: ../../components/fe/my-button",
     "require: ../../components/fe/my-counter",
     "require: ../../components/fe/my-row",

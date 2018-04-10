@@ -12,6 +12,8 @@ module.exports = {
 
     // create empty state!
     this.state = {
+      value: input.value ? input.value : 0,
+      myButton: null
     };
   },
 
